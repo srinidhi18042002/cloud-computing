@@ -1,9 +1,9 @@
 # CloudHack_3
 
 TEAM MEMBERS:
-DIVIJA L              PSE1UG20CS134
-DHATHRI G             PES1UG20CS141
-SRINIDHI  BHARADWAJ   PES1UG20CS143
+1. DIVIJA L              PSE1UG20CS134
+2. DHATHRI G             PES1UG20CS141
+3. SRINIDHI  BHARADWAJ   PES1UG20CS143
 
 We chose to implement two functionalities as mentioned by the project guidelines. 
 1)Lowest Common Multiple
