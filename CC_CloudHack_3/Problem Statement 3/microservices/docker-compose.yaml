@@ -1,0 +1,72 @@
+version: '3.3'  # version of compose format
+
+services:
+  addition:
+    build: ./landing/app/add
+    ports:
+      - 5051:5051 #addition 
+    networks:
+      sample:
+        aliases:
+         - add
+  subtraction:
+    build: ./landing/app/subtract
+    ports:
+      - 5052:5052 #subtraction
+    networks:
+      sample:
+        aliases:
+         - subtract
+  multiplication:
+    build: ./landing/app/multiplication
+    ports:
+      - 5053:5053 #multiplication
+    networks:
+      sample:
+        aliases:
+         - multiply
+  division:
+    build: ./landing/app/division
+    ports:
+      - 5054:5054 #division 
+    networks:
+      sample:
+        aliases:
+         - divide
+  exponent:
+    build: ./landing/app/exponent
+    ports:
+      - 5055:5055 #exponent
+    networks:
+      sample:
+        aliases:
+         - exponent
+  lcm:
+    build: ./landing/app/lcm
+    ports:
+      - 5056:5056 #Lowest Common Multiple
+    networks:
+      sample:
+        aliases:
+         - lcm
+  binomial:
+    build: ./landing/app/binomial
+    ports:
+      - 5057:5057 #Binomial
+    networks:
+      sample:
+        aliases:
+         - binomial
+ 
+  landing-service:
+    build: ./landing  # path is relative to docker-compose.yml location
+    hostname: landing-service
+    ports:
+      - 5050:5050  # host:container
+    networks:
+      sample:
+        aliases:
+          - landing-service
+  # Add more services below
+networks:
+  sample:
